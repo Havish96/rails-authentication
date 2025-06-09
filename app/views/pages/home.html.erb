@@ -1,2 +1,6 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<h1>Home - LEWAGON</h1>
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo, at recusandae corporis, consectetur officiis repudiandae quas quisquam harum qui minus totam excepturi, atque quos commodi non a itaque distinctio dolorum.</p>
+
+<% if user_signed_in? %>
+  <p>Hi, <%= current_user.email %></p>
+<% end %>

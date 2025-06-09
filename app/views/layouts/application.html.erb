@@ -18,8 +18,11 @@
   </head>
 
   <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-    <%= yield %>
+    <%= render 'shared/navbar' %>
+    <%= render "shared/flashes" %>
+
+    <div class="container py-4">
+      <%= yield %>
+    </div>
   </body>
 </html>
